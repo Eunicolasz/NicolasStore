@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Página principal */
+
+
+/* Produtos */
+
+/* Sobre Nós */
+#body{
+
+}
+
+#titulo{
+    display: flex;
+    position: sticky;
+}
+
+
+#search{
+    position: relative;
+    left: 700px;
+    overflow-x: 100px;
+    }
+#home{
+
+    position: relative;
+    right: 700px;
+}
+#header{
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+#corpo{
+    background-color: grey;
+}
+#compra{
+    font-size: 20px;
+}
+
+#Produtos{
+    display: flex;
+
+}
+#produtobotao{
+
+    margin-right: 3.5%;
+    margin-left: 2%;
+}
+#comprar{
+    width: 150px;
+    height: 50px;
+    margin-top: 300px;
+    margin-left: 100px;
+}
+
+#compras{
+
+    width: 150px;
+    height: 50px;
+    margin-top: 400px;
+    margin-left: 100px;
+}
+footer{
+    margin-top: 10%;
+}
