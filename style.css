@@ -6,61 +6,127 @@
 /* Produtos */
 
 /* Sobre Nós */
-#body{
+.body{
 
 }
 
-#titulo{
+.titulo{
     display: flex;
     position: sticky;
 }
 
-
-#search{
+.search{
     position: relative;
     left: 700px;
     overflow-x: 100px;
     }
-#home{
+.home{
 
     position: relative;
     right: 700px;
 }
-#header{
+.header{
     text-align: center;
     background-color: whitesmoke;
 }
 
-#corpo{
+.corpo{
     background-color: grey;
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+    border-left: 2px solid rgb(255, 255, 255);
+    border-right: 2px solid rgb(255, 255, 255);
 }
-#compra{
+.compra{
     font-size: 20px;
 }
 
-#Produtos{
+.Produtos{
     display: flex;
 
 }
-#produtobotao{
+.produtobotao{
 
     margin-right: 3.5%;
     margin-left: 2%;
 }
-#comprar{
+.comprar{
     width: 150px;
     height: 50px;
     margin-top: 300px;
     margin-left: 100px;
 }
 
-#compras{
+.compras{
 
     width: 150px;
     height: 50px;
     margin-top: 400px;
     margin-left: 100px;
 }
-footer{
+.footer{
     margin-top: 10%;
+}
+
+.slider{
+    display: block;
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+img#slide1, img#slide2, img#slide3{
+    width: 300px;
+    height: 300px;
+} 
+
+.slider li{
+    list-style: none;
+    position: absolute;
+}
+
+.slider img{
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+
+.slider input{
+    display: none;
+}
+
+.slider label{
+    background-color: cyan;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label{
+    left: 10px;
+}
+.slider li:nth-child(2) label{
+    left: 40px;
+}
+.slider li:nth-child(3) label{
+    left: 70px;
+}
+
+.slider img{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img{
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
 }
